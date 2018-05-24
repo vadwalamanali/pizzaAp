@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title></title>
+</head>
+<body>
+<header class="custom-header">
+	<div class="logo">
+		<a href="#">
+			<img src="https://online.pizzahut.co.in/sites/default/files/product_images/pizzahut_slice_images/1371006.png" class="img" alt="pizza" />
+		</a>
+	</div>
+</header>
+<div class="main">
+<section class="type-section">
+	<div class="pizza__filter-value"></div>
+	<div class="type_component">
+		<input type="checkbox"  id="veg" value="veg" name="type" /> 
+			<label for="veg" class="custom_radio"><span class="info">Veg</span></label>	
+	</div>	
+	<div class="type_component">
+		<input type="checkbox" id="nonveg" value="nonveg" name="type"/> 
+		<label for="nonveg" class="custom_radio">
+			<span class="info">Non Veg</span>
+		</label>
+	</div>
+	<p>
+		<label for="amount">Price range:</label>
+		<input type="range" id="amount" min="0" max="1000" class="slider" value=0>
+		<label>Value: <span id="amountresult"></span></label>
+	</p>
+	<div>
+	<select class="select_box" id="pizzabase" name="pizzabase">
+		<option value="0" selected="selected">Pizza Base</option>
+		<option value="chees">chees</option>
+		<option value="mayoness">mayoness</option>
+	</select>
+	</div>
+	<div>
+		<select class="select_box" id="pizzatopping">
+			<option value="Pizza Topping">Pizza Topping</option>
+			<option value="onion">onion</option>
+			<option value="mashroom">mashroom</option>
+		</select>
+	</div>
+</section>	
+<section class="pizza-section">
+	<div class="pizza-details veg-pizza" data-type="veg" data-price="100">
+		<img src="https://online.pizzahut.co.in/sites/default/files/product_images/pizzahut_slice_images/1371006.png" class="img" alt="pizza" />
+		<div class="pizza-detail">
+		<h2>Superman Pizza</h2>
+		<ul>
+			<li>chees</li>
+			<li>mayonees</li>
+			<li> Veg</li>
+		</ul>
+		<h3>Rs.100/-</h3>
+		<button type="button">ADD</button>
+		</div>
+	</div>
+	<div class="pizza-details nonveg-pizza" data-type="nonveg" data-price="500">
+		<img src="https://online.pizzahut.co.in/sites/default/files/product_images/pizzahut_slice_images/1371006.png" class="img" alt="pizza" />
+		<div class="pizza-detail">
+		<h2>Batman Pizza</h2>
+		<ul>
+			<li>onion</li>
+			<li>mashroom</li>
+			<li>Non Veg</li>
+		</ul>
+		<h3>Rs.500/-</h3>
+		<button type="button">ADD</button>
+		</div>
+	</div>
+	<div class="pizza-details veg-pizza" data-type="veg" data-price="100" data-pizzabase="">
+		<img src="https://online.pizzahut.co.in/sites/default/files/product_images/pizzahut_slice_images/1371006.png" class="img" alt="pizza" />
+		<div class="pizza-detail">
+		<h2>Cheese Pizza</h2>
+		<ul>
+			<li>chees</li>
+			<li>mayonees</li>
+			<li>Veg</li>
+		</ul>
+		<h3>Rs.100/-</h3>
+		<button type="button">ADD</button>
+		</div>
+	</div>
+	<div class="pizza-details nonveg-pizza" data-type="nonveg" data-price="500">
+		<img src="https://online.pizzahut.co.in/sites/default/files/product_images/pizzahut_slice_images/1371006.png" class="img" alt="pizza" />
+		<div class="pizza-detail">
+		<h2>Batman Pizza</h2>
+		<ul>
+			<li>onion</li>
+			<li>mashroom</li>
+			<li>Non Veg</li>
+		</ul>
+		<h3>Rs.500/-</h3>
+		<button type="button">ADD</button>
+		</div>
+	</div>	
+</section>
+</div>
+<script type="text/javascript" src="js/script.js"></script> 
+</body>	
+</html>
